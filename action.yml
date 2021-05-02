@@ -11,7 +11,7 @@ inputs:
     default: 'ci'
 runs:
   using: 'docker'
-  image: "docker://winchci/java-latest:latest"
+  image: "docker://winchci/java-8:latest"
   args:
     - 'winch ${{ inputs.command }} -f ${{ inputs.filename }}'
 branding:
